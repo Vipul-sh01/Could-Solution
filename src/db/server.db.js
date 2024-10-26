@@ -1,5 +1,5 @@
 import { Sequelize } from 'sequelize';
-import { DB_NAME } from '../constant.js';
+import { DB_NAME } from '../constants.js';
 import { initModels } from './centralize.models.js';
 
 const sequelize = new Sequelize(DB_NAME, process.env.PG_USER, process.env.PG_PASSWORD, {
